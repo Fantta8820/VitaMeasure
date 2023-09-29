@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Yrsa&display=swap');
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yrsa', serif;
+}
+
+body {
+    text-align: center;
+}
+
+nav,
+nav ul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    animation: aparecer 1s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+
+nav p {
+    padding: 0 20px;
+    animation: aparecer 1s ease-in-out;
+
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+header {
+    background-image: linear-gradient(180deg, rgba(188, 238, 112, 0.7), rgba(157, 241, 171, 0.7)), url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+    animation: aparecer 1s ease-in-out;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+#text {
+    margin-top: 150px;
+}
+
+#sec01 h1 {
+    color: black;
+    font-size: 4vw;
+    padding-top: 50px;
+    animation: aparecer 1s ease-in-out;
+}
+
+#sec01 p {
+    text-align: center;
+    font-size: 3vw;
+    margin: 40px;
+    animation: aparecer 1s ease-in-out;
+}
+
+#sec01 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#sec01 label {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+
+    animation: aparecer 1s ease-in-out;
+}
+
+#sec01 #botao {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-width: 0;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: aparecer 1s ease-in-out;
+}
+
+#valor01,
+#valor02 {
+    border-radius: 20px;
+    border-width: 2;
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    animation: aparecer 1s ease-in-out;
+}
+
+#resultado {
+    margin: 20px 50px 30px 50px;
+}
+
+#sec01 {
+    background-color: rgba(188, 238, 112);
+    width: 100%;
+    max-height: 1200px;
+}
+
+#sec02 h1 {
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    animation: aparecer 1s ease-in-out;
+}
+
+#sec02 p {
+    text-align: center;
+    font-size: 25px;
+    margin: 0 40px;
+}
+
+@media(min-width: 1301px) {
+    header {
+        height: 500px;
+    }
+
+    nav {
+        font-size: 2vw;
+    }
+
+    #sec01 #botao {
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #valor01,
+    #valor02 {
+        border-radius: 20px;
+        border-width: 2;
+        width: 400px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 40px;
+        text-align: center;
+        animation: aparecer 1s ease-in-out;
+    }
+
+    #sec01 label {
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 1700px) {
+    header {
+        height: 600px;
+    }
+
+    #sec01 label {
+        font-size: 60px;
+    }
+
+    #sec01 h1 {
+        font-size: 4vw;
+    }
+
+    #sec01 p {
+        font-size: 40px;
+    }
+
+    #valor01,
+    #valor02 {
+        border-radius: 20px;
+        border-width: 2;
+        width: 400px;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 40px;
+        text-align: center;
+        animation: aparecer 1s ease-in-out;
+    }
+
+    #resultado h1 {
+        font-size: 50px;
+    }
+
+    #resultado p {
+        font-size: 30px;
+    }
+}
+
+
+@media(max-width: 1300px) {
+    header h2 {
+        font-size: 3vw;
+    }
+
+    header {
+        height: 500px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    #sec01 #botao {
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #sec01 label {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 950px) {
+    header {
+        height: 400px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    #sec01 #botao {
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    #sec01 label {
+        font-size: 30px;
+    }
+}

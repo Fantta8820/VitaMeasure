@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaMeasure - Calcular IMC</title>
+    <link rel="stylesheet" href="../css/imc.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <p>VitaMeasure</p>
+            </a>
+            <ul>
+                <a href="imc.html">
+                    <li>IMC</li>
+                </a>
+                <a href="recomendacao.html">
+                    <li>Recomendações</li>
+                </a>
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="text">
+            <h1>Calcule o seu Índice de Massa Corporal</h1>
+            <h2>Aqui você pode calcular o seu Índice de Massa Corporal e receber recomendações baseadas nele</h2>
+        </div>
+    </header>
+    <section id="sec01">
+        <h1>Calcular o Índice de Massa Corporal</h1>
+        <p>
+            Insira algumas informações para podermos calcular o seu IMC
+        </p>
+        <div class="container">
+            <form>
+                <label>Peso</label>
+                <input type="text" id="valor01">
+                <label>Altura</label>
+                <input type="text" id="valor02">
+                <input type="button" value="Calcular" id="botao" onclick="calcular()">
+            </form>
+        </div>
+    </section>
+    <section id="sec02">
+        <div id="resultado">
+            <h1 id="tipo"></h1>
+            <p id="explicacao"></p>
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
